@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Etiquetas semanticas">
+    <meta name="keywords" content="HTML">            <!--Estos son los meta que podemos utilizar los cuales indican en que codificación esta nuestro codigo, las palabras clave, la descripción del contenido que trata, que este en escala 1.0 y el nombre del autor del sitio web-->
+    <meta name="author" content="Stephen Garcia">
+    <title>Etiquetas semanticas</title>
+</head>
+<body>
+
+    <!--Estructura sin etiquetas semanticas -->
+    <div id="header">
+        <h1>Aqui va el titulo de la web</h1>      
+    </div>
+    <div id="nav">
+        <ul>
+            <li><a href="#">Inicio</a></li>             
+            <li><a href="#">Servicios</a></li>               <!--De esta forma sin etiquetas semanticas su problema es que no proporciona bien la estructura de nuestra web para que el navegador la pueda comprender bien, pero de manera gráfica se ven iguales-->
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </div>
+    
+    <div id="main">   
+        <div id="article">
+            <h2>Contenido principal</h2>
+            <p>Ejemplo del contenido.</p>     
+        </div>      
+    </div>
+    
+    <div id="aside">
+        <h3>Empresas mas ricas del 2023</h3>
+        <p>Las empresas mas ricas de 2023 son ...</p>  
+    </div>
+    
+    <div id="footer">
+        <h4>Redes sociales</h4>
+    </div>    
+    
+    <!--Estructura con etiquetas semanticas -->
+    <header>
+        <h1>Aqui va el titulo de la web</h1>      
+    </header>  
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li> <!--Se colocan las almohadillas en este caso ya que como es un ejemplo no tengo otras paginas para poner su link-->
+            <li><a href="#">Contacto</a></li>
+       </ul>
+    </nav>
+
+    <main>   
+        <article>
+            <h2>Contenido principal</h2>
+            <p>Ejemplo del contenido.</p>      <!--Main nos indica el contenido principal de nuestra web-->
+        </article>      
+    </main>
+
+    <aside>
+        <h3>Empresas mas ricas del 2023</h3>
+        <p>Las empresas mas ricas de 2023 son ...</p>   <!--aside nos indica una información -->
+    </aside>
+
+    <footer>
+        <h4>Redes sociales</h4>
+    </footer>
+
+</body>
+</html>
